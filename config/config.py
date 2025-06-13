@@ -48,7 +48,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/Youghsie/y.git",
+    "https://github.com/ZeebFly/y.git",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -70,7 +70,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002084395631"))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "940232666").split())
+    map(int, getenv("OWNER_ID", "1004345600").split())
 )  # Input type must be interger
 
 
