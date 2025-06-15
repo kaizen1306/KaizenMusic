@@ -5,7 +5,7 @@ from ZeebMusic import app
 
 #--------------------------
 
-MUST_JOIN = "SpotifyStream_Id"
+MUST_JOIN = "ZeebSupport"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
@@ -22,11 +22,11 @@ async def must_join_channel(app: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://mallucampaign.in/images/img_1710090490.jpg", caption=f"<blockquote><b>Silahkan bergabung dulu [Support]({link}) ,jika ingin menggunakan bot ini, jika sudah bergabung silahkan ulangi /start</b></blockquote>",
+                    photo="https://files.catbox.moe/f3qpus.jpg", caption=f"<blockquote><b>Silahkan bergabung dulu [Support]({link}) ,jika ingin menggunakan bot ini, jika sudah bergabung silahkan ulangi /start</b></blockquote>",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🎵 JOIN DULU", url="https://t.me/SpotifyStream_Id"),
+                                InlineKeyboardButton("🎵 JOIN DULU", url="https://t.me/ZeebSupport"),
                             ]
                         ]
                     )
