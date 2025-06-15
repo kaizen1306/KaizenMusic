@@ -95,10 +95,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/SpotifyStream_Id"
+    "SUPPORT_CHANNEL", "https://t.me/RuangZeeb"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TempatDemus_Id"
+    "SUPPORT_GROUP", "https://t.me/ZeebSupport"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -122,7 +122,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Usern4meDoesExist404")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/zeedisini")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -179,14 +179,14 @@ autoclean = []
 PHOTO = list(
     filter(
         None,
-        getenv("PHOTO_LINKS", "https://mallucampaign.in/images/img_1718787407.jpg").split(),
+        getenv("PHOTO_LINKS", "https://files.catbox.moe/f3qpus.jpg").split(),
     )
 )
 
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://mallucampaign.in/images/img_1718787407.jpg",
+    "https://files.catbox.moe/f3qpus.jpg",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
