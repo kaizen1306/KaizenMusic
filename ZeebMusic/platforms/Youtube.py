@@ -182,7 +182,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"cookiefile": "ryn_new.txt", "quiet": True}
+        ytdl_opts = {"cookiefile": "cookies/zbcookies.txt", "quiet": True}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
