@@ -12,8 +12,8 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "29861643"))
-API_HASH = getenv("API_HASH", "7277438424:AAFXAc88zPSQhsevBUh1IvsMdm4bUeNz_Gc")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH", "")
 
 
 ## Get it from @Botfather in Telegram.
@@ -35,12 +35,12 @@ DURATION_LIMIT_MIN = int(
 )  # Remember to give value in Minutes
 
 # forced entry
-MUST_JOIN = getenv("MUST_JOIN")
+MUST_JOIN = getenv("MUST_JOIN", "@ZeebSupport")
 
 
 EXTRA_PLUGINS = getenv(
     "EXTRA_PLUGINS",
-    "True",
+    "False",
 )
 
 # Fill True if you want to load extra plugins
@@ -48,7 +48,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/ZeebFly/y.git",
+    "https://github.com/ZeebX/plugins.git",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -65,7 +65,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002084395631"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 
 # Your User ID.
@@ -84,7 +84,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Youghvee/VexeraMusic.git",
+    "https://github.com/ZeebFly/MusicPlayer.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -96,10 +96,10 @@ GIT_TOKEN = getenv(
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/RuangZeeb"
-)  # Example:- https://t.me/TheTeamVivek
+)  
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "https://t.me/ZeebSupport"
-)  # Example:- https://t.me/TheTeamVk
+)  
 
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -165,7 +165,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "Rynlogs.txt"
+LOG_FILE_NAME = "ZbLogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
