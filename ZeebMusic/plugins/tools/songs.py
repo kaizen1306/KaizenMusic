@@ -21,7 +21,7 @@ from ZeebMusic.utils.inline.song import song_markup
 
 # Command
 
-mycookies = "ryn.txt"
+mycookies = "cookies/zbcookies.txt"
 
 SONG_COMMAND = get_command("SONG_COMMAND")
 
@@ -305,7 +305,7 @@ async def song_download_cb(client, CallbackQuery, _):
 
     yturl = f"https://www.youtube.com/watch?v={vidid}"
 
-    with yt_dlp.YoutubeDL({"cookiefile": "ryn_new.txt", "quiet": True}) as ytdl:
+    with yt_dlp.YoutubeDL({"cookiefile": "cookies/zbcookies.txt", "quiet": True}) as ytdl:
 
         x = ytdl.extract_info(yturl, download=False)
 
