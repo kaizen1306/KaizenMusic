@@ -1,5 +1,5 @@
 from SafeoneAPI import SafeoneAPI
-from ZeebMusic.core.bot import RynBot
+from ZeebMusic.core.bot import ZbBot
 from ZeebMusic.core.dir import dirr
 from ZeebMusic.core.git import git
 from ZeebMusic.core.userbot import Userbot
@@ -21,7 +21,7 @@ heroku()
 # Load Sudo Users from DB
 sudo()
 # Bot Client
-app = RynBot()
+app = ZbBot()
 
 # Assistant Client
 userbot = Userbot()
