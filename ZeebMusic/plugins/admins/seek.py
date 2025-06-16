@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from ZeebMusic import YouTube, app
-from ZeebMusic.core.call import Ryn
+from ZeebMusic.core.call import Zb
 from ZeebMusic.misc import db
 from ZeebMusic.utils import AdminRightsCheck, seconds_to_min
 
