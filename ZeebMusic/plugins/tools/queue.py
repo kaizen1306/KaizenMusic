@@ -9,7 +9,7 @@ from config import BANNED_USERS
 from strings import get_command
 from ZeebMusic import app
 from ZeebMusic.misc import db
-from ZeebMusic.utils import Rynbin, get_channeplayCB, seconds_to_min
+from ZeebMusic.utils import Zbbin, get_channeplayCB, seconds_to_min
 from ZeebMusic.utils.database import get_cmode, is_active_chat, is_music_playing
 from ZeebMusic.utils.decorators.language import language, languageCB
 from ZeebMusic.utils.inline import queue_back_markup, queue_markup
