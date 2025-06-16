@@ -44,8 +44,8 @@ async def init():
 
     LOGGER("ZeebMusic.plugins").info("Successfully Imported All Modules ")
     await userbot.start()
-    await Ryn.start()
-    await Ryn.decorators()
+    await Zb.start()
+    await Zb.decorators()
     LOGGER("ZeebMusic").info("Ryn Music Bot Started Successfully")
     await idle()
 
