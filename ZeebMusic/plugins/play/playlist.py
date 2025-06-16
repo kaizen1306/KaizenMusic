@@ -32,7 +32,7 @@ from ZeebMusic.utils.inline.playlist import (
     get_playlist_markup,
     warning_markup,
 )
-from ZeebMusic.utils.pastebin import Rynbin
+from ZeebMusic.utils.pastebin import Zbbin
 from ZeebMusic.utils.stream.stream import stream
 
 
@@ -54,7 +54,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Rynbin(msg)
+    link = await Zbbin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
