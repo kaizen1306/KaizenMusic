@@ -8,7 +8,7 @@ from pyrogram.types import CallbackQuery, Message
 from config import BANNED_USERS, adminlist, lyrical
 from strings import get_command
 from ZeebMusic import app
-from ZeebMusic.core.call import Ryn
+from ZeebMusic.core.call import Zb
 from ZeebMusic.misc import db
 from ZeebMusic.utils.database import get_authuser_names, get_cmode
 from ZeebMusic.utils.decorators import ActualAdminCB, AdminActual, language
@@ -49,7 +49,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Ryn.stop_stream(message.chat.id)
+        await Zb.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -60,7 +60,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Ryn.stop_stream(chat_id)
+            await Zb.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text("sᴜᴄᴇssғᴜʟʟʏ ʀᴇsᴛᴀʀᴛᴇᴅ. \nTʀʏ ᴘʟᴀʏɪɴɢ ɴᴏᴡ..")
