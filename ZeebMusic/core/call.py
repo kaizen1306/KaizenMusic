@@ -609,4 +609,4 @@ class Call(PyTgCalls):
                     return
                 autoend[chat_id] = {}
 
-Ryn = Call()
+Zb = Call()
