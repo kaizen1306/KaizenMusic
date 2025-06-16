@@ -5,7 +5,7 @@ import config
 from config import BANNED_USERS
 from strings import get_command
 from ZeebMusic import YouTube, app
-from ZeebMusic.core.call import Ryn
+from ZeebMusic.core.call import Zb
 from ZeebMusic.misc import db
 from ZeebMusic.utils.database import get_loop
 from ZeebMusic.utils.decorators import AdminRightsCheck
@@ -99,7 +99,7 @@ async def skip(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_11"].format(title))
         try:
-            await Ryn.skip_stream(chat_id, link, video=status)
+            await Zb.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
