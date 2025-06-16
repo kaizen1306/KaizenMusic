@@ -56,7 +56,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Ryn.stop_stream(chat_id)
+                    await Zb.stop_stream(chat_id)
                 except:
                     continue
                 try:
