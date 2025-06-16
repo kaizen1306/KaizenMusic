@@ -11,10 +11,10 @@ TEMP_MONGODB = "mongodb+srv://botmusic:1234@cluster0.01yhlmq.mongodb.net/?retryW
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "No MONGO DB URL found.. Your Bot will work on Ryn's Database"
+        "No MONGO DB URL found.. Your Bot will work on Zb's Database"
     )
     temp_client = Client(
-        "Ryn",
+        "Zb",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Ryn
-    pymongodb = _mongo_sync_.Ryn
+    mongodb = _mongo_async_.Zb
+    pymongodb = _mongo_sync_.Zb
