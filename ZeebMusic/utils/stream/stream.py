@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from ZeebMusic import Carbon, YouTube, app
-from ZeebMusic.core.call import Ryn
+from ZeebMusic.core.call import Zb
 from ZeebMusic.misc import db
 from ZeebMusic.utils.database import (
     add_active_video_chat,
@@ -16,7 +16,7 @@ from ZeebMusic.utils.database import (
 from ZeebMusic.utils.exceptions import AssistantErr
 from ZeebMusic.utils.inline.play import queue_markup, stream_markup, telegram_markup
 from ZeebMusic.utils.inline.playlist import close_markup
-from ZeebMusic.utils.pastebin import Rynbin
+from ZeebMusic.utils.pastebin import Zbbin
 from ZeebMusic.utils.stream.queue import put_queue, put_queue_index
 from ZeebMusic.utils.thumbnails import gen_qthumb, gen_thumb
 
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Ryn.force_stop_stream(chat_id)
+        await Zb.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -87,7 +87,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Ryn.join_call(
+                await Zb.join_call(
                     chat_id, original_chat_id, file_path, video=status, image=thumbnail
                 )
                 await put_queue(
@@ -120,7 +120,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Rynbin(msg)
+            link = await Zbbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -173,7 +173,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ryn.join_call(
+            await Zb.join_call(
                 chat_id, original_chat_id, file_path, video=status, image=thumbnail
             )
             await put_queue(
@@ -230,7 +230,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ryn.join_call(chat_id, original_chat_id, file_path, video=None)
+            await Zb.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -280,7 +280,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ryn.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Zb.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -334,7 +334,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Ryn.join_call(
+            await Zb.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -390,7 +390,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ryn.join_call(
+            await Zb.join_call(
                 chat_id,
                 original_chat_id,
                 link,
