@@ -37,7 +37,10 @@ def start_pannel(_):
 def private_panel(_):
     buttons = [
         [
-            InlineKeyboardButton(text="Support", url=f"{SUPPORT_CHANNEL}"),
+            InlineKeyboardButton(text="Channel", url=f"{SUPPORT_CHANNEL}"),
+            InlineKeyboardButton(text="Support", url=f"{SUPPORT_GROUP}"),
+        ],
+        [
             InlineKeyboardButton(text="Add Me", url=f"https://t.me/{app.username}?startgroup=true"),
             InlineKeyboardButton(text="Owner", url=f"https://t.me/bebanjing"),
         ],
