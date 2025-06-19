@@ -12,16 +12,16 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
+API_ID = int(getenv("API_ID", "23519683"))
+API_HASH = getenv("API_HASH", "94dbb8ff00f6b9af3c0f4a4792d3a622")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7724244477:AAEs5dkhAwrfWKgo8OLQD7IM14x62KZTuEU")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://musickjnbase:44xZK1cp0zRombXQ@musickjnbase.vfrwnty.mongodb.net/?retryWrites=true&w=majority&appName=musickjnbase")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -31,11 +31,11 @@ CLEANMODE_DELETE_MINS = int(
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "50000")
+    getenv("DURATION_LIMIT", "500000")
 )  # Remember to give value in Minutes
 
 # forced entry
-MUST_JOIN = getenv("MUST_JOIN", "@ZeebSupport")
+MUST_JOIN = getenv("MUST_JOIN", "@kaijen_store")
 
 
 EXTRA_PLUGINS = getenv(
@@ -60,17 +60,17 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "500")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "50000")
 )  # Remember to give value in Minutes
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002864024582"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1004345600").split())
+    map(int, getenv("OWNER_ID", "6419758715").split())
 )  # Input type must be interger
 
 
@@ -95,10 +95,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/RuangZeeb"
+    "SUPPORT_CHANNEL", "https://t.me/kaijen_store"
 )  
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/ZeebSupport"
+    "SUPPORT_GROUP", "https://t.me/kaijensupport"
 )  
 
 
@@ -107,7 +107,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "50000")
+    getenv("ASSISTANT_LEAVE_TIME", "500000")
 )  # Remember to give value in Seconds
 
 # mode PRIVATE
@@ -186,7 +186,7 @@ PHOTO = list(
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://files.catbox.moe/f3qpus.jpg",
+    "https://files.catbox.moe/y7gag8.jpg",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
