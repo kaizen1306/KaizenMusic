@@ -122,7 +122,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/zeedisini")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/bebanjing")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -155,7 +155,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 SET_CMDS = getenv("SET_CMDS", "False")
 
-STRING1 = getenv("STRING_SESSION", "BQFm4cMAHu2pOrmIAJ-ACuiD5yHsE-THLgk_R5Hf2Neru_gOdKbyjOahmbxA8MB6tZbKnHPMB6eTFXaZRdbyCqJyXb0Q-JcQy0e3qEXJr7uNz7SPYaWWajgb5bnRaF-j6n6chL2upqJHcaZw1Uus5In46qzJUA_GNXBJeRdO35OHwYJ8J2jFnwtG21AOY-UjhxpkhF2VSA3E4rFmfXtJYQSg8ioXGzdVvKLGMJ0tkxd8Nkf_X3RxMzYEThk5v4zqG7IfBl8fzIguPk3tzLWwXVgUSq7ekMKTJ4doLvvEG_b2dZUiKdI7_r8xYjE1IBN5ZLJdFNb3buJlXfkruSeX9PvMQn9X2wAAAAGSU-5aAA")
+STRING1 = getenv("STRING_SESSION", "BQFm4cMAJkhyCMX8ONehHjW7sS7KS5oksMMeDW5Gs5hj2zOKvS5j1Nw7L1kTSSqca9luPT4uQiO1NMVUoCgnu1KXweMzlZf5ReFkBFNycyFzphK6BOSaNMILjJ6x-2iQ4nX1PtzpByI_X90REnMbvzcW5VzG-Hc4gcgVO9tGT2GW3Z2uTfu6swXc1_vPHU7gOmtipEaqZaI4HEzSf9Gc1h3PqW5LNsjKpov5lnpSp6KtG-oicmEb1Fo4HFp5nk_ZcQqkWDW-6HEWUeRRtpKnYkqIbCqi4pUIR4XoINe3NqBMzFW_9oXf-U5I-nJCaK4cmXQr6b_BPXv3Rz4YCfU1lvdIu5j8YwAAAAGSU-5aAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
