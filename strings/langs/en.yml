@@ -4,11 +4,11 @@ name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
 # General Strings
 general_1 : "Balas pesan pengguna atau berikan nama pengguna/id_pengguna"
 general_2 : "Kesalahan! Penggunaan Perintah yang Salah."
-general_3 : "<blockquote><b>Beberapa **pengecualian terjadi** saat memproses kueri kamu.\n\nJenis Pengecualian:- {0} </b></blockquote>"
-general_4 : "<blockquote><b>kamu adalah admin anonim di grup obrolan ini!\nKembali ke Akun Pengguna Dari Hak Admin.</b></blockquote>"
-general_5 : "<blockquote><b>kamu harus menjadi admin dengan mengelola hak obrolan suara untuk melakukan tindakan ini.</b></blockquote>"
+general_3 : "<blockquote><b>Beberapa **pengecualian terjadi** saat memproses kueri kamu.\n\nJenis Pengecualian: - {0} </b></blockquote>"
+general_4 : "<blockquote><b>Kamu adalah admin anonim di grup obrolan ini!\nKembali ke Akun Pengguna Dari Hak Admin.</b></blockquote>"
+general_5 : "<blockquote><b>Kamu harus menjadi admin dengan mengelola hak obrolan suara untuk melakukan tindakan ini.</b></blockquote>"
 general_6 : "<blockquote><b>Bot tidak streaming di voice chat.</b></blockquote>"
-force_sub : "<blockquote><b>silahkan {} bergabung dulu dengan grup atau saluran kami sebelum menggunakan bot ini</b></blockquote>"
+force_sub : "<blockquote><b>Silahkan {} bergabung dulu dengan grup atau saluran kami sebelum menggunakan bot ini</b></blockquote>"
 
 
 # Classes - Telegram.py
@@ -38,7 +38,7 @@ auth_4 : "Dihapus dari Daftar Pengguna Resmi Grup ini."
 auth_5 : "Pengguna yang ditargetkan bukanlah Pengguna yang Sah."
 auth_6 : "Mengambil Pengguna Resmi... Harap Tunggu"
 auth_7 : "**Daftar Pengguna Resmi[AUL]:**\n\n"
-auth_8 : "<blockquote><b>┗ Ditambahkan Oleh:-</b></blockquote>"
+auth_8 : "<blockquote><b>┗ Ditambahkan Oleh: -</b></blockquote>"
 
 # PLUGINS - Admins
 admin_1 : "<blockquote><b>Music sudah Dijeda.</b></blockquote>"
@@ -133,7 +133,7 @@ play cb1 : "Ini bukan untukmu! Cari Lagumu Sendiri."
 play cb2 : "Mendapatkan Hasil Selanjutnya"
 
 # Channel Play
-cplay_1 : "kamu dapat memutar musik di Channel dari obrolan ini[{0}] ke channel mana pun atau Channdl tertaut obrolan kamu.\n\n**Untuk saluran tertaut:**\n`/{1} linked`\n\n* *Untuk Channel lainnya:**\n`/{1} [ID Channel]`"
+cplay_1 : "kamu dapat memutar musik di Channel dari obrolan ini[{0}] ke channel mana pun atau Channel tertaut obrolan kamu.\n\n**Untuk saluran tertaut:**\n`/{1} linked`\n\n* *Untuk Channel lainnya:**\n`/{1} [ID Channel]`"
 cplay_2 : "Obrolan ini tidak memiliki channel tertaut."
 cplay_3 : "Channel Ditetapkan ke {0}\n\n__ID Channel__: {1}"
 cplay_4 : "Gagal mendapatkan channel.\n\nPastikan kamu telah menambahkan bot di channel kamu dan mempromosikannya sebagai admin.\nEdit atau Ubah channel melalui /channelplay"
