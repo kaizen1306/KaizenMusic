@@ -20,6 +20,8 @@ heroku()
 
 # Load Sudo Users from DB
 sudo()
+#
+api = SafeoneAPI()
 # Bot Client
 app = ZbBot()
 
