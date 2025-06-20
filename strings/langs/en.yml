@@ -77,7 +77,7 @@ admin_33 : "<blockquote><b>Aliran Berhasil Dicari hingga {0} Menit</b></blockquo
 admin_34 : "<blockquote><b>Gagal mencari aliran saat ini.</b></blockquote>"
 
 # Start
-start_1 : "<b>Halo, saya {0}.\n\nbot streaming telegram dengan beberapa fitur berguna. untuk memudahkan kamu memutar music di obrolan suara\n\nJangan ragu untuk menambahkan saya kegroup kamu.</b>"
+start_1 : "<b>Halo, saya {0}.\n\nbot streaming telegram dengan beberapa fitur berguna. untuk memudahkan kamu memutar music di obrolan suara\n\nJangan ragu untuk menambahkan saya ke group kamu.</b>"
 start_2 : "<blockquote><b>Terima kasih telah menerima saya di {0}.\n{1} Saya Masih Berfungsi.\n\nUntuk bantuan atau bantuan apa pun, periksa Group dan Channel Support kami.</b></blockquote>"
 start_3 : "<blockquote><b>Pemilik {0} {1} baru saja bergabung dengan obrolan kamu.</b></blockquote>"
 start_4 : "<blockquote><b>Anggota Pengguna Sudo {0}[{1}] baru saja bergabung dengan obrolan kamu.</b></blockquote>"
